@@ -27,6 +27,7 @@
               "id": "2250626d-50ae-4c68-aa45-b3d728823d1e",
               "z": 1,
               "hasOpenThreats": false,
+              "outOfScope": false,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -52,16 +53,35 @@
               "angle": 0,
               "id": "ef50fd73-0859-4a27-a57b-da83c5aff22b",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Authentication bypass",
+                  "type": "Spoofing",
+                  "description": "An unauthorised user logs in and supplies malicious data to our SFTP server",
+                  "mitigation": "Strong keys/Credential based authentication for SFTP server"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Direct Internet access",
+                  "type": "Tampering",
+                  "description": "Placing SFTP server containing Internal data in a public endpoint can be dangerous",
+                  "mitigation": "Place server inside VPC and gateway"
+                }
+              ],
+              "isSigned": true,
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Data lake SFTP server"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -227,16 +247,26 @@
               "angle": 0,
               "id": "2b007cee-9363-4380-89ae-cf91ac2313a2",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Input validation",
+                  "type": "Tampering",
+                  "description": "Input file from eGain server can contain malware or malicious code in it",
+                  "mitigation": "Input validation for filetype, extension, checksum and malware analysis."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Lambda\nfunction - .xml,\n.manifest file\nextraction"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -253,16 +283,26 @@
               "angle": 0,
               "id": "d7723ac8-a8cd-48b1-9920-4a7acb2af7a6",
               "z": 8,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "description": "Input file from eGain server can contain malware or malicious code in it",
+                  "title": "Input validation",
+                  "type": "Tampering",
+                  "mitigation": "Input validation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Lambda\nfunction - .xml,\n.manifest, .dat\nfile extraction"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
