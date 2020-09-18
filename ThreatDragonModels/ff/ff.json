@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "ff",
+    "owner": "fff",
+    "description": "fsf"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "fdfdfdf",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "fff"
+  }
+}
