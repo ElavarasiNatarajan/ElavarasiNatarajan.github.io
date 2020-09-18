@@ -47,8 +47,8 @@
                 "height": 80
               },
               "position": {
-                "x": 377,
-                "y": 132
+                "x": 406,
+                "y": 134
               },
               "angle": 0,
               "id": "ef50fd73-0859-4a27-a57b-da83c5aff22b",
@@ -92,22 +92,32 @@
                 "height": 100
               },
               "position": {
-                "x": 991,
-                "y": 163
+                "x": 984,
+                "y": 169
               },
               "angle": 0,
               "id": "48a1e462-0984-4aa1-a7c7-7feefa94076a",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Encryption",
+                  "type": "Information disclosure",
+                  "description": "Plain text data storage",
+                  "mitigation": "Encrypting data at rest"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "nbs-daa-dev-sb\nd-landing-zone\n- S3"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -115,28 +125,17 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 211,
-                "y": 87
+                "x": 212,
+                "y": 94
               },
               "target": {
-                "id": "ef50fd73-0859-4a27-a57b-da83c5aff22b"
+                "x": 439,
+                "y": 133
               },
               "vertices": [
                 {
-                  "x": 278,
-                  "y": 62
-                },
-                {
-                  "x": 351,
-                  "y": 43
-                },
-                {
-                  "x": 407,
-                  "y": 47
-                },
-                {
-                  "x": 428,
-                  "y": 78
+                  "x": 293,
+                  "y": 67
                 }
               ],
               "id": "3fe85b02-48b5-4ee4-970c-9d8ad5221fb9",
@@ -179,8 +178,8 @@
               },
               "vertices": [
                 {
-                  "x": 268,
-                  "y": 194
+                  "x": 230,
+                  "y": 255
                 }
               ],
               "id": "14141caf-22d5-4fbf-832b-19fdc4e8b9f5",
@@ -211,8 +210,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.48819882729840836,
-                    "offset": -20.03966396908101
+                    "distance": 0.610761471301381,
+                    "offset": -24.99326998752887
                   },
                   "attrs": {
                     "text": {
@@ -393,22 +392,32 @@
                 "height": 100
               },
               "position": {
-                "x": 994,
-                "y": 6
+                "x": 981,
+                "y": 14
               },
               "angle": 0,
               "id": "c61a24ea-1622-4bc2-9132-1cb66b77b957",
               "z": 11,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Encryption",
+                  "type": "Information disclosure",
+                  "description": "Plain text data storage",
+                  "mitigation": "Data at rest to be encrypted using native methodology"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "nbs-daa-dev-sb\nd-raw-source-m\netadata"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
