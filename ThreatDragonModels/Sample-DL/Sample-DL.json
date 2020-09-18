@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Sample-DL",
+    "owner": "Ela",
+    "description": "Testing for data lake"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Sample Data lake",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Ela1"
+  }
+}
